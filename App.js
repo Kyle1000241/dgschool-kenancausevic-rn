@@ -8,6 +8,7 @@ export default function App() {
     <MainStackNaigator initialRouteName="Home" />
     <StackScreen name="Home" component={MainStackNaigator} />
     <StackScreen name="About" component={MainStackNaigator} />
+    <StackScreen name="Contact" component={MainStackNaigator} />
   <MainStackNaigator />
  </NavigationContainer>
   );
