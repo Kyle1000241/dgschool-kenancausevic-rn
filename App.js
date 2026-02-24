@@ -1,15 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
-import MainStackNaigator from './src/navigation/StackNavigator';
+import MainStackNavigator from './src/navigation/StackNavigator';
 import { StackScreen } from 'react-native-screens';
+import DrawerNavigator from './src/navigation/DrawerNavigator';
 
 export default function App() {
   return (
  <NavigationContainer>
-    <MainStackNaigator initialRouteName="Home" />
-    <StackScreen name="Home" component={MainStackNaigator} />
-    <StackScreen name="About" component={MainStackNaigator} />
-    <StackScreen name="Contact" component={MainStackNaigator} />
-  <MainStackNaigator />
+  <DrawerNavigator />
  </NavigationContainer>
   );
 }
