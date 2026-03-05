@@ -54,7 +54,22 @@ const BottomTabNavigator = () => {
           tabBarLabel: "iOS",
         }}
       />
+      <Tab.Screen
+        name="Android"
+        component={AndroidStackNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons
+              name="android"
+              size={26}
+              color={color}
+            />
+          ),
+          tabBarLabel: "Android",
+        }}
+      />
     </Tab.Navigator>
+    
   );
 };
 
